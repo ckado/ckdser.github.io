@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>曹某人的主页</title>
         <link rel="shortcut icon" href="favicon.ico" />
         <!-- ------------------------------------------------- -->
@@ -16,7 +17,6 @@
         <link rel="stylesheet" href="./css/style-2.css" />
         <link rel="stylesheet" href="./css/style-3.css" />
         <link rel="stylesheet" href="./css/style-4.css" />
-        <link rel="stylesheet" href="./css/style-5.css" />
         <link rel="stylesheet" href="./css/jaliswall.css" />
         <!-- ------------------------------------------------- -->
         <script src="js/jQuery.mini.js"></script>
@@ -246,7 +246,7 @@
                         <div class="sec2_main_body_content hidden">
                             <div class="sec2_main_body_content_left">
                                 <p>💘</p>
-                                <p>太杂了，不知道说什么好！！！</p>
+                                <p>太杂了，不知道说什么！！！</p>
                                 <p>💓</p>
                             </div>
                             <div class="sec2_main_body_content_right">
@@ -276,48 +276,6 @@
             </div>
             <!-- <h3>第四屏</h3> -->
             <div class="section sec4" id="section4">
-                <!-- 背景小圆点 -->
-                <div class="sec4_circle1"></div>
-                <div class="sec4_circle2"></div>
-                <div class="sec4_circle3"></div>
-                <!-- 主题内容 -->
-                <div class="sec4_main_box">
-                    <!-- 天气板块 -->
-                    <div id="sec4-app">
-                        <div class="sec4_title"><h2>小 伟 天 气</h2></div>
-                        <div class="sec4_search">
-                            <input
-                                type="text"
-                                name=""
-                                id=""
-                                placeholder="九江"
-                                @keyup.enter="searchEnter"
-                                v-model="city"
-                                class="sec4_input"
-                            />
-                            <button @click="clickButton" class="sec4_button">搜索</button>
-                        </div>
-                        <div class="sec4_select">
-                            <a href="javascript:;" @click="changeCity('南昌')">南昌</a>
-                            <a href="javascript:;" @click="changeCity('杭州')">杭州</a>
-                            <a href="javascript:;" @click="changeCity('上海')">上海</a>
-                            <a href="javascript:;" @click="changeCity('北京')">北京</a>
-                            <a href="javascript:;" @click="changeCity('广州')">广州</a>
-                        </div>
-                        <ul class="sec4_ul">
-                            <li v-for="item in weatherList" :key="index" class="sec4_li">
-                                <div class="sec4_weather">
-                                    <div class="tianqi">{{item.type}}</div>
-                                    <div class="qiwen">{{item.low}}</div>
-                                    <div class="date">{{item.date}}</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- <h3>第五屏</h3> -->
-            <div class="section sec5" id="section5">
                 <video src="./img/zwi.mp4" autoplay muted loop controls></video>
             </div>
         </div>
